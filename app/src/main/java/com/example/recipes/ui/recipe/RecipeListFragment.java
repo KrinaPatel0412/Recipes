@@ -73,6 +73,7 @@ public class RecipeListFragment extends Fragment implements RecipeListAdapter.Re
                 navController.navigate(RecipeListFragmentDirections.actionRecipeListFragmentToAccountFragment());
                 return true;
             } else if (itemId == R.id.favorites_item) {
+                navController.navigate(RecipeListFragmentDirections.actionRecipeListFragmentToFavoriteListFragment());
                 return true;
             } else {
                 return false;
