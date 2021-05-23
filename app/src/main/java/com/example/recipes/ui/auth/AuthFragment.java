@@ -40,6 +40,9 @@ public class AuthFragment extends Fragment {
         loginButton.setOnClickListener(v -> {
             navController.navigate(AuthFragmentDirections.actionAuthFragmentToLoginFragment());
         });
+        registerButton.setOnClickListener(v -> {
+            navController.navigate(AuthFragmentDirections.actionAuthFragmentToRegisterFragment());
+        });
     }
 
     @Override
