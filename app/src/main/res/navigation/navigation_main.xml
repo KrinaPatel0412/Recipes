@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation></navigation>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/auth_fragment">
+
+    <fragment
+        android:id="@+id/auth_fragment"
+        android:name="com.example.recipes.ui.auth.AuthFragment"
+        tools:layout="@layout/fragment_auth" >
+
+        <action
+            android:id="@+id/action_auth_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.example.recipes.ui.auth.LoginFragment"
+        tools:layout="@layout/fragment_login" />
+</navigation>
