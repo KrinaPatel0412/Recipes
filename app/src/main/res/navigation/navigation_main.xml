@@ -16,6 +16,12 @@
         <action
             android:id="@+id/action_auth_fragment_to_register_fragment"
             app:destination="@id/register_fragment" />
+
+        <action
+            android:id="@+id/action_auth_fragment_to_recipe_list_fragment"
+            app:destination="@id/recipe_list_fragment"
+            app:popUpTo="@id/auth_fragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
@@ -27,4 +33,9 @@
         android:id="@+id/register_fragment"
         android:name="com.example.recipes.ui.auth.RegisterFragment"
         tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/recipe_list_fragment"
+        android:name="com.example.recipes.ui.recipe.RecipeListFragment"
+        tools:layout="@layout/fragment_recipe_list" />
 </navigation>

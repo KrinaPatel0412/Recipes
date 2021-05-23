@@ -5,4 +5,8 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="name">Name</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+    <string name="favorites">Favorites</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.example.recipes.ui.auth;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,6 +53,9 @@ public class AuthFragment extends Fragment {
         if (user != null) {
             loginButton.setVisibility(View.GONE);
             registerButton.setVisibility(View.GONE);
+            new Handler().postDelayed(() -> {
+                navController.navigate(AuthFragmentDirections.actionAuthFragmentToRecipeListFragment());
+            }, 1000);
         } else {
             loginButton.setVisibility(View.VISIBLE);
             registerButton.setVisibility(View.VISIBLE);
