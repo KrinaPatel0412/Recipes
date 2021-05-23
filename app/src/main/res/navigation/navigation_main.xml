@@ -37,5 +37,20 @@
     <fragment
         android:id="@+id/recipe_list_fragment"
         android:name="com.example.recipes.ui.recipe.RecipeListFragment"
-        tools:layout="@layout/fragment_recipe_list" />
+        tools:layout="@layout/fragment_recipe_list">
+
+        <action
+            android:id="@+id/action_recipe_list_fragment_to_recipe_detail_fragment"
+            app:destination="@id/recipe_detail_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipe_detail_fragment"
+        android:name="com.example.recipes.ui.recipe.RecipeDetailFragment"
+        tools:layout="@layout/fragment_recipe_detail">
+
+        <argument
+            android:name="recipe"
+            app:argType="com.example.recipes.data.responses.Recipe" />
+    </fragment>
 </navigation>

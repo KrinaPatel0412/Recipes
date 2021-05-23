@@ -111,6 +111,7 @@ public class RecipeListFragment extends Fragment implements RecipeListAdapter.Re
 
     @Override
     public void onClick(Recipe recipe) {
+        navController.navigate(RecipeListFragmentDirections.actionRecipeListFragmentToRecipeDetailFragment(recipe));
     }
 
     private void loadRecipes() {
