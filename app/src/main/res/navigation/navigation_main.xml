@@ -42,6 +42,10 @@
         <action
             android:id="@+id/action_recipe_list_fragment_to_recipe_detail_fragment"
             app:destination="@id/recipe_detail_fragment" />
+
+        <action
+            android:id="@+id/action_recipe_list_fragment_to_account_fragment"
+            app:destination="@id/account_fragment" />
     </fragment>
 
     <fragment
@@ -52,5 +56,17 @@
         <argument
             android:name="recipe"
             app:argType="com.example.recipes.data.responses.Recipe" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/account_fragment"
+        android:name="com.example.recipes.ui.account.AccountFragment"
+        tools:layout="@layout/fragment_account">
+
+        <action
+            android:id="@+id/action_account_fragment_to_auth_fragment"
+            app:destination="@id/auth_fragment"
+            app:popUpTo="@id/recipe_list_fragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

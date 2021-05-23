@@ -70,6 +70,7 @@ public class RecipeListFragment extends Fragment implements RecipeListAdapter.Re
         toolbar.setOnMenuItemClickListener(item -> {
             int itemId = item.getItemId();
             if (itemId == R.id.account_item) {
+                navController.navigate(RecipeListFragmentDirections.actionRecipeListFragmentToAccountFragment());
                 return true;
             } else if (itemId == R.id.favorites_item) {
                 return true;
