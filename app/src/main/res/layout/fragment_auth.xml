@@ -51,7 +51,7 @@
         android:textColor="?attr/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@id/login_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/login_button" />
+        app:layout_constraintStart_toEndOf="@id/login_button"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
